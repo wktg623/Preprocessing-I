@@ -49,43 +49,236 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+@import url("https://fonts.google.com/?selection.family=Montserrat|Roboto");
+
 * {
     box-sizing: border-box;
 }
 
+
 html, body {
 	height: 100%;
-	width: 98%;
-	margin-left: 2%;
-	margin-right: 2%;
-	margin-top: 1%;
-	background-color: red;
+	width: 900px;
+	margin: 0 auto;
+	
+	@links: blue;
+	@bold: bold;
+	@size: 30px; 
+	
+	
 
 	nav{
 		display: flex;
 		justify-content: space-evenly;
-		margin-bottom: 2%;
+		margin-bottom: 4%;
+		text-decoration: none;
+		padding-top: 2%;
+		font-family: 'Montserrat|Roboto';
+		
+	
+		
+		a{
+			text-decoration: none;
+			
+			
+		}
+		a:hover{font-size: 130%;}
+		
 	}
 
 	.name-title{
+		background: #E8E8E8;
 		display: flex;
-		justify-content: space-evenly;
+		font-family: 'Montserrat', serif;
+		height: 25%;
+		width: 98%;
 		font-size: 50px;
-	}
+		padding-bottom: 1%;
+		padding-top: 1%;
+		font-display: sans-serif;
 		
+		
+	}
+
+
 	h1{
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		padding-left: 8%;
+		
 		
 	}
 	img{
 		display: flex;
 		flex-direction: column;
 		width: 25%;
-		
+		border: 1px solid black;
+		margin-right: 6%;
 
 	}
+
+	.intro{
+		margin-top: 2%;
+		margin-bottom: 2%;
+		
+
+		h2{
+			display: flex;
+			font-weight: @bold;
+			font-size: @size;
+			
+			
+		}
+		p{
+			display: flex;
+			font-weight: @bold; 
+			
+			
+		}
+	}
+.skills-and-work{display: flex;
+				width: 98%;
+				justify-content: space-evenly;
+				border: 1px solid black;
+				border-radius: 4%;
+				padding: 3%;
+			
+	
+	.skills{display: flex;
+		flex-direction: column;
+		width: 49%;
+		margin-left: 1%;
+		
+		
+			
+		h2{
+			font-weight: @bold;
+			font-size: @size;
+				
+		}
+
+		ul{
+			list-style-type: circle;
+			color: black;
+			font-weight: @bold;
+			padding-top: 1%;
+		}
+	}
+		.work-history{
+			display: flex;
+			flex-direction: column;
+			
+			flex-wrap: wrap;
+			width: 49%;
+			
+
+			h2{
+				font-weight: @bold;
+				font-size: @size;
+			}
+
+			ul{ 
+				list-style-type: circle;
+				font-weight: @bold;
+				padding-top: 1%;
+				
+				
+			}
+		
+	}
 }
+
+.contact{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	padding-top: 2%;
+	
+	.contact-info{
+		display: flex;
+		margin-bottom: 1%;
+		font-weight: bold;
+		font-size: 20px;
+		width: 49%;
+		
+		
+	}
+.contact-form{
+	
+	.name-title();
+	font-size: 16px;
+	
+	h3{
+		font-weight: @bold;
+		font-size: @size;
+	}
+	
+}
+	
+}
+	}
+		
+	@media only screen and(max-width: 500px){
+body{
+	
+		
+		margin: 0 auto;
+
+		nav{
+			display: flex;
+			width: 470px;
+			
+		}
+		.name-title{
+			display: flex;
+			flex-direction: column;
+			width: 470px;
+			margin-bottom: 20%;
+			margin-left: 1%;
+		
+
+			h1{
+				align-self:center;
+				margin-right: 5%;
+			}
+			img{
+				align-self: center;
+				width: 200px;
+				
+				
+			}
+		}
+		.intro{
+			width: 460px;
+			border: 1px solid black;
+			margin-left: 1%;
+			padding-left: 1%;
+			
+			
+
+			h2{
+				display: flex;
+				justify-content: center;
+				margin-top: 3%;
+			}
+		}
+		.skills-and-work{
+			
+			.intro();
+		}
+
+		.contact{
+			width: 460px;
+			margin-left: 1%;
+			padding-left: 1%;
+		
+
+		
+	}
+}
+	}
+
 
 	
 
