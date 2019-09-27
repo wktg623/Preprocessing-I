@@ -1,1 +1,329 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 900px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+html nav,
+body nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 4%;
+  text-decoration: none;
+  padding-top: 2%;
+}
+html nav a,
+body nav a {
+  text-decoration: none;
+}
+html nav a:hover,
+body nav a:hover {
+  font-size: 130%;
+}
+html .name-title,
+body .name-title {
+  background: #E8E8E8;
+  display: flex;
+  font-family: 'Montserrat', serif;
+  height: 25%;
+  width: 98%;
+  font-size: 50px;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  font-display: sans-serif;
+}
+html h1,
+body h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8%;
+}
+html img,
+body img {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border: 1px solid black;
+  margin-right: 6%;
+}
+html .intro,
+body .intro {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+html .intro h2,
+body .intro h2 {
+  display: flex;
+  font-weight: bold;
+  font-size: 30px;
+}
+html .intro p,
+body .intro p {
+  display: flex;
+  font-weight: bold;
+}
+html .skills-and-work,
+body .skills-and-work {
+  display: flex;
+  width: 98%;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  border-radius: 4%;
+  padding: 3%;
+}
+html .skills-and-work .skills,
+body .skills-and-work .skills {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  margin-left: 1%;
+}
+html .skills-and-work .skills h2,
+body .skills-and-work .skills h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+html .skills-and-work .skills ul,
+body .skills-and-work .skills ul {
+  list-style-type: circle;
+  color: black;
+  font-weight: bold;
+  padding-top: 1%;
+}
+html .skills-and-work .work-history,
+body .skills-and-work .work-history {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 49%;
+}
+html .skills-and-work .work-history h2,
+body .skills-and-work .work-history h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+html .skills-and-work .work-history ul,
+body .skills-and-work .work-history ul {
+  list-style-type: circle;
+  font-weight: bold;
+  padding-top: 1%;
+}
+html .contact,
+body .contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-top: 2%;
+}
+html .contact .contact-info,
+body .contact .contact-info {
+  display: flex;
+  margin-bottom: 1%;
+  font-weight: bold;
+  font-size: 20px;
+  width: 49%;
+}
+html .contact .contact-form,
+body .contact .contact-form {
+  background: #E8E8E8;
+  display: flex;
+  font-family: 'Montserrat', serif;
+  height: 25%;
+  width: 98%;
+  font-size: 50px;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  font-display: sans-serif;
+  font-size: 16px;
+}
+html .contact .contact-form h3,
+body .contact .contact-form h3 {
+  font-weight: bold;
+  font-size: 30px;
+}
+@media only screen and (max-width: 500px) {
+  body {
+    margin: 0 auto;
+  }
+  body nav {
+    display: flex;
+    width: 470px;
+  }
+  body .name-title {
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    margin-bottom: 20%;
+    margin-left: 1%;
+  }
+  body .name-title h1 {
+    align-self: center;
+    margin-right: 5%;
+  }
+  body .name-title img {
+    align-self: center;
+    width: 200px;
+  }
+  body .intro {
+    width: 460px;
+    border: 1px solid black;
+    margin-left: 1%;
+    padding-left: 1%;
+  }
+  body .intro h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    width: 460px;
+  }
+  body .skills-and-work {
+    width: 460px;
+    margin-left: 1%;
+  }
+  body .contact {
+    margin-left: 1%;
+    padding-left: 1%;
+    width: 460px;
+  }
+}
